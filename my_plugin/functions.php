@@ -42,7 +42,7 @@ class my_class{
 	*/
 	public function myplugin_activate() {
 		add_action('admin_notices', array($this,'notice_not_activated'));
-		if (!is_plugin_active('cn_php_wp_plugin_for_tasks/coding-ninjas.php')) {
+		if (!is_plugin_active('coding-ninjas/coding-ninjas.php')) {
 			$this->notice_not_activated();
 			die;
 		}
